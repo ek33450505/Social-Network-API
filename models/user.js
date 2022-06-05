@@ -4,15 +4,41 @@ const UserSchema = new Schema(
     {
     username: {
         type: String,
-        required: true,
+        required: 'You must provie a unique username to continue',
+        trim: true,
         unique: true
-        // need to add vailid email address match
     },
-    thoughts: { 
-        // array of id ref thought model
+    email: {
+        type: String,
+        required: 'You must provide a vaild email address to continue',
+        unique: true,
+        match: [/^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/]
     },
-    friends: {
-        // array of _id ref the User model self reference
+    thoughts: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Thought'
+        }
+    ],
+    friends: [
+        {
+            type: Schema.Types.ObjectId, ref: 'User'
+        }
+    ],
+},
+
+    {
+        toJSON: {
+            virtuals: true,
+            getters: true
+        }
     }
- }
 );
+
+UserSchema.virtual('friendCount').get(function() {
+    return this.friend.length;
+});
+
+const User = model('User', UserSchema);
+
+module.exports = User;

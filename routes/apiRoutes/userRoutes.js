@@ -12,13 +12,13 @@ const {
 router
   .route('/')
   .get(getAllUser)
-  .post(createUser);
+  .post(createUser)
 
 // Set up GET one, PUT, and DELETE at /api/pizzas/:id
 router
   .route('/:id')
   .get(getUserById)
   .put(updateUser)
-  .delete(deleteUser);
+  .delete(deleteUser)
 
 module.exports = router;

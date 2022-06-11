@@ -25,10 +25,10 @@ router
     .route('/:userId')
     .post(addThought)
 
-    // Why isn't this working in insomnia?
+    
 router
     .route('/:id/reactions')
-    .put(postReaction)
+    .post(postReaction)
 
 router  
     .route('/:id/reactions/:reactionId')

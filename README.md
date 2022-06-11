@@ -25,14 +25,23 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
   - [Contact](#contact)
 
   ## Installation: 
+
+  For installation, please clone that application to your computer and test routes using insomnia. There is no deployed application for this project.
  
   ## Visualization:
 
   ## License:
 
+  This project is licensed under MIT: https://opensource.org/licenses/MIT
+
   ## Contributors:
 
+  The idea for this project was presented by the Ohio State University Coding Bootcamp and Trilogy Education Services https://www.trilogyed.com/
+
   ## Tests:
+
+  Please view this link for a video demonstration: ![Screenshot 2022-06-10 202325](https://user-images.githubusercontent.com/97137083/173165138-56bb13bc-60ac-4c4e-a53d-aff1727d57ac.png)
+
 
   ## Contact:
   - GitHub Username: [ek33450505](https://github.com/ek33450505)

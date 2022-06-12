@@ -30,6 +30,11 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
  
   ## Visualization:
 
+  https://drive.google.com/file/d/1HlyBnzVsQjB5qCzeyRQABiXX9d0GH4ru/view - Video Part 1
+
+  https://drive.google.com/file/d/1ASLOYtt9GQiqGA3zJVy7305DtBsaK00h/view - Video Part 2
+
+
   ## License:
 
   This project is licensed under MIT: https://opensource.org/licenses/MIT
